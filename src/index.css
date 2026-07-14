@@ -1,0 +1,93 @@
+/* ===== Page Title ===== */
+.page-title {
+  font-weight: 700;
+  color: #198754;
+  position: relative;
+  display: inline-block;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #198754;
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+/* ===== Team Box (Booking Card) ===== */
+.team-box {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.team-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Top Section (Pet Name + Booking ID) ===== */
+.team-top {
+  background: linear-gradient(135deg, yellow, black);
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+}
+
+.team-top h5 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.team-top span {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+/* ===== Info Section ===== */
+.team-info {
+  padding: 1.3rem 1.5rem;
+}
+
+.team-info p {
+  margin-bottom: 0.6rem;
+  font-size: 0.93rem;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #e5e5e5;
+  padding-bottom: 0.5rem;
+}
+
+.team-info p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.team-info p strong {
+  color: #198754;
+  font-weight: 600;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 576px) {
+  .team-info p {
+    flex-direction: column;
+  }
+
+  .team-info p strong {
+    margin-bottom: 2px;
+  }
+}
